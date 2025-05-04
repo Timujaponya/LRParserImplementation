@@ -1,0 +1,216 @@
+2025-05-03 19:18:20,579 - LRParser - INFO - LR Parser started
+2025-05-03 19:18:20,579 - LRParser - INFO - Input file: input1.txt
+2025-05-03 19:18:20,579 - LRParser - INFO - Output file: output1.txt
+2025-05-03 19:18:20,579 - LRParser - INFO - Grammar file: Grammar.txt
+2025-05-03 19:18:20,580 - LRParser - INFO - Action table file: ActionTable.txt
+2025-05-03 19:18:20,580 - LRParser - INFO - Goto table file: GotoTable.txt
+2025-05-03 19:18:20,580 - LRParser - INFO - Initializing LR Parser
+2025-05-03 19:18:20,580 - LRParser - DEBUG - Loading grammar from Grammar.txt
+2025-05-03 19:18:20,581 - LRParser - DEBUG - Reading grammar file: Grammar.txt
+2025-05-03 19:18:20,581 - LRParser - DEBUG - Loaded rule: E -> E + T
+2025-05-03 19:18:20,581 - LRParser - DEBUG - Loaded rule: E -> T
+2025-05-03 19:18:20,581 - LRParser - DEBUG - Loaded rule: T -> T * F
+2025-05-03 19:18:20,581 - LRParser - DEBUG - Loaded rule: T -> F
+2025-05-03 19:18:20,581 - LRParser - DEBUG - Loaded rule: F -> ( E )
+2025-05-03 19:18:20,581 - LRParser - DEBUG - Loaded rule: F -> id
+2025-05-03 19:18:20,581 - LRParser - INFO - Successfully loaded 6 grammar rules
+2025-05-03 19:18:20,581 - LRParser - DEBUG - Loading action table from ActionTable.txt
+2025-05-03 19:18:20,581 - LRParser - DEBUG - Reading action table file: ActionTable.txt
+2025-05-03 19:18:20,581 - LRParser - DEBUG - Action table terminals: ['id', '+', '*', '(', ')', '$']
+2025-05-03 19:18:20,581 - LRParser - DEBUG - Loaded action[0,id] = s5
+2025-05-03 19:18:20,581 - LRParser - DEBUG - Loaded action[0,+] = error
+2025-05-03 19:18:20,581 - LRParser - DEBUG - Loaded action[0,*] = error
+2025-05-03 19:18:20,581 - LRParser - DEBUG - Loaded action[0,(] = s4
+2025-05-03 19:18:20,581 - LRParser - DEBUG - Loaded action[0,)] = error
+2025-05-03 19:18:20,581 - LRParser - DEBUG - Loaded action[0,$] = error
+2025-05-03 19:18:20,581 - LRParser - DEBUG - Loaded action[1,id] = error
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[1,+] = s6
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[1,*] = error
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[1,(] = error
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[1,)] = error
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[1,$] = accept
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[2,id] = error
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[2,+] = r2
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[2,*] = s7
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[2,(] = error
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[2,)] = r2
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[2,$] = r2
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[3,id] = error
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[3,+] = r4
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[3,*] = r4
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[3,(] = error
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[3,)] = r4
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[3,$] = r4
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[4,id] = s5
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[4,+] = error
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[4,*] = error
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[4,(] = s4
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[4,)] = error
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[4,$] = error
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[5,id] = error
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[5,+] = r6
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[5,*] = r6
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[5,(] = error
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[5,)] = r6
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[5,$] = r6
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[6,id] = s5
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[6,+] = error
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[6,*] = error
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[6,(] = s4
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[6,)] = error
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[6,$] = error
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[7,id] = s5
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[7,+] = error
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[7,*] = error
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[7,(] = s4
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[7,)] = error
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[7,$] = error
+2025-05-03 19:18:20,582 - LRParser - DEBUG - Loaded action[8,id] = error
+2025-05-03 19:18:20,583 - LRParser - DEBUG - Loaded action[8,+] = s6
+2025-05-03 19:18:20,583 - LRParser - DEBUG - Loaded action[8,*] = error
+2025-05-03 19:18:20,583 - LRParser - DEBUG - Loaded action[8,(] = error
+2025-05-03 19:18:20,583 - LRParser - DEBUG - Loaded action[8,)] = s11
+2025-05-03 19:18:20,583 - LRParser - DEBUG - Loaded action[8,$] = error
+2025-05-03 19:18:20,583 - LRParser - DEBUG - Loaded action[9,id] = error
+2025-05-03 19:18:20,583 - LRParser - DEBUG - Loaded action[9,+] = r1
+2025-05-03 19:18:20,583 - LRParser - DEBUG - Loaded action[9,*] = s7
+2025-05-03 19:18:20,583 - LRParser - DEBUG - Loaded action[9,(] = error
+2025-05-03 19:18:20,583 - LRParser - DEBUG - Loaded action[9,)] = r1
+2025-05-03 19:18:20,583 - LRParser - DEBUG - Loaded action[9,$] = r1
+2025-05-03 19:18:20,583 - LRParser - DEBUG - Loaded action[10,id] = error
+2025-05-03 19:18:20,583 - LRParser - DEBUG - Loaded action[10,+] = r3
+2025-05-03 19:18:20,583 - LRParser - DEBUG - Loaded action[10,*] = r3
+2025-05-03 19:18:20,583 - LRParser - DEBUG - Loaded action[10,(] = error
+2025-05-03 19:18:20,583 - LRParser - DEBUG - Loaded action[10,)] = r3
+2025-05-03 19:18:20,583 - LRParser - DEBUG - Loaded action[10,$] = r3
+2025-05-03 19:18:20,583 - LRParser - DEBUG - Loaded action[11,id] = error
+2025-05-03 19:18:20,583 - LRParser - DEBUG - Loaded action[11,+] = r5
+2025-05-03 19:18:20,583 - LRParser - DEBUG - Loaded action[11,*] = r5
+2025-05-03 19:18:20,583 - LRParser - DEBUG - Loaded action[11,(] = error
+2025-05-03 19:18:20,583 - LRParser - DEBUG - Loaded action[11,)] = r5
+2025-05-03 19:18:20,583 - LRParser - DEBUG - Loaded action[11,$] = r5
+2025-05-03 19:18:20,583 - LRParser - INFO - Successfully loaded action table with 12 states
+2025-05-03 19:18:20,583 - LRParser - DEBUG - Loading goto table from GotoTable.txt
+2025-05-03 19:18:20,583 - LRParser - DEBUG - Reading goto table file: GotoTable.txt
+2025-05-03 19:18:20,583 - LRParser - DEBUG - Goto table non-terminals: ['E', 'T', 'F']
+2025-05-03 19:18:20,583 - LRParser - DEBUG - Loaded goto[0,E] = 1
+2025-05-03 19:18:20,583 - LRParser - DEBUG - Loaded goto[0,T] = 2
+2025-05-03 19:18:20,583 - LRParser - DEBUG - Loaded goto[0,F] = 3
+2025-05-03 19:18:20,584 - LRParser - DEBUG - Loaded goto[4,E] = 8
+2025-05-03 19:18:20,584 - LRParser - DEBUG - Loaded goto[4,T] = 2
+2025-05-03 19:18:20,584 - LRParser - DEBUG - Loaded goto[4,F] = 3
+2025-05-03 19:18:20,584 - LRParser - DEBUG - Loaded goto[6,T] = 9
+2025-05-03 19:18:20,584 - LRParser - DEBUG - Loaded goto[6,F] = 3
+2025-05-03 19:18:20,584 - LRParser - DEBUG - Loaded goto[7,F] = 10
+2025-05-03 19:18:20,584 - LRParser - INFO - Successfully loaded goto table with 4 states
+2025-05-03 19:18:20,584 - LRParser - DEBUG - Extracting non-terminals and terminals
+2025-05-03 19:18:20,584 - LRParser - INFO - LR Parser initialized successfully
+2025-05-03 19:18:20,584 - LRParser - DEBUG - Grammar loaded: 6 rules
+2025-05-03 19:18:20,584 - LRParser - DEBUG - Action table loaded: 12 states
+2025-05-03 19:18:20,584 - LRParser - DEBUG - Goto table loaded: 4 states
+2025-05-03 19:18:20,584 - LRParser - DEBUG - Non-terminals: {'T', 'F', 'E'}
+2025-05-03 19:18:20,584 - LRParser - DEBUG - Terminals: {'*', '(', '+', ')', 'id'}
+2025-05-03 19:18:20,596 - LRParser - INFO - Read input from input1.txt: 'id * id + id'
+2025-05-03 19:18:20,598 - LRParser - INFO - Starting parsing process
+2025-05-03 19:18:20,598 - LRParser - INFO - Starting to parse input: 'id * id + id'
+2025-05-03 19:18:20,599 - LRParser - DEBUG - Tokenized input: ['id', '*', 'id', '+', 'id', '$']
+2025-05-03 19:18:20,599 - LRParser - INFO - Starting LR parsing algorithm
+2025-05-03 19:18:20,599 - LRParser - DEBUG - Step 1: State=0, Current token=id
+2025-05-03 19:18:20,599 - LRParser - DEBUG - Stack: [0]
+2025-05-03 19:18:20,599 - LRParser - DEBUG - Symbol stack: []
+2025-05-03 19:18:20,599 - LRParser - DEBUG - Remaining input: ['id', '*', 'id', '+', 'id', '$']
+2025-05-03 19:18:20,599 - LRParser - DEBUG - Action: s5
+2025-05-03 19:18:20,599 - LRParser - DEBUG - Performing SHIFT to state 5
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Step 2: State=5, Current token=*
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Stack: [0, 5]
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Symbol stack: ['id']
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Remaining input: ['*', 'id', '+', 'id', '$']
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Action: r6
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Performing REDUCE with rule 6: F -> id
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Got GOTO state 3
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Step 3: State=3, Current token=*
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Stack: [0, 3]
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Symbol stack: ['F']
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Remaining input: ['*', 'id', '+', 'id', '$']
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Action: r4
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Performing REDUCE with rule 4: T -> F
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Got GOTO state 2
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Step 4: State=2, Current token=*
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Stack: [0, 2]
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Symbol stack: ['T']
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Remaining input: ['*', 'id', '+', 'id', '$']
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Action: s7
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Performing SHIFT to state 7
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Step 5: State=7, Current token=id
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Stack: [0, 2, 7]
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Symbol stack: ['T', '*']
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Remaining input: ['id', '+', 'id', '$']
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Action: s5
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Performing SHIFT to state 5
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Step 6: State=5, Current token=+
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Stack: [0, 2, 7, 5]
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Symbol stack: ['T', '*', 'id']
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Remaining input: ['+', 'id', '$']
+2025-05-03 19:18:20,600 - LRParser - DEBUG - Action: r6
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Performing REDUCE with rule 6: F -> id
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Got GOTO state 10
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Step 7: State=10, Current token=+
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Stack: [0, 2, 7, 10]
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Symbol stack: ['T', '*', 'F']
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Remaining input: ['+', 'id', '$']
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Action: r3
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Performing REDUCE with rule 3: T -> T * F
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Got GOTO state 2
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Step 8: State=2, Current token=+
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Stack: [0, 2]
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Symbol stack: ['T']
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Remaining input: ['+', 'id', '$']
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Action: r2
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Performing REDUCE with rule 2: E -> T
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Got GOTO state 1
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Step 9: State=1, Current token=+
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Stack: [0, 1]
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Symbol stack: ['E']
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Remaining input: ['+', 'id', '$']
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Action: s6
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Performing SHIFT to state 6
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Step 10: State=6, Current token=id
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Stack: [0, 1, 6]
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Symbol stack: ['E', '+']
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Remaining input: ['id', '$']
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Action: s5
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Performing SHIFT to state 5
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Step 11: State=5, Current token=$
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Stack: [0, 1, 6, 5]
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Symbol stack: ['E', '+', 'id']
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Remaining input: ['$']
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Action: r6
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Performing REDUCE with rule 6: F -> id
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Got GOTO state 3
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Step 12: State=3, Current token=$
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Stack: [0, 1, 6, 3]
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Symbol stack: ['E', '+', 'F']
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Remaining input: ['$']
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Action: r4
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Performing REDUCE with rule 4: T -> F
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Got GOTO state 9
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Step 13: State=9, Current token=$
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Stack: [0, 1, 6, 9]
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Symbol stack: ['E', '+', 'T']
+2025-05-03 19:18:20,601 - LRParser - DEBUG - Remaining input: ['$']
+2025-05-03 19:18:20,602 - LRParser - DEBUG - Action: r1
+2025-05-03 19:18:20,602 - LRParser - DEBUG - Performing REDUCE with rule 1: E -> E + T
+2025-05-03 19:18:20,602 - LRParser - DEBUG - Got GOTO state 1
+2025-05-03 19:18:20,602 - LRParser - DEBUG - Step 14: State=1, Current token=$
+2025-05-03 19:18:20,602 - LRParser - DEBUG - Stack: [0, 1]
+2025-05-03 19:18:20,602 - LRParser - DEBUG - Symbol stack: ['E']
+2025-05-03 19:18:20,602 - LRParser - DEBUG - Remaining input: ['$']
+2025-05-03 19:18:20,602 - LRParser - DEBUG - Action: accept
+2025-05-03 19:18:20,602 - LRParser - INFO - Input accepted!
+2025-05-03 19:18:20,602 - LRParser - DEBUG - Parse tree constructed successfully
+2025-05-03 19:18:20,602 - LRParser - INFO - Parsing successful
+2025-05-03 19:18:20,602 - LRParser - INFO - Saving output to file: output1.txt
+2025-05-03 19:18:20,603 - LRParser - DEBUG - Parse tree written to output file
+2025-05-03 19:18:20,603 - LRParser - INFO - Output successfully saved to output1.txt
+2025-05-03 19:18:20,604 - LRParser - INFO - Output saved to output1.txt
+2025-05-03 19:18:20,605 - LRParser - INFO - LR Parser completed successfully

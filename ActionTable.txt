@@ -1,0 +1,13 @@
+state id + * ( ) $
+0 s5 e e s4 e e
+1 e s6 e e e a
+2 e r2 s7 e r2 r2
+3 e r4 r4 e r4 r4
+4 s5 e e s4 e e
+5 e r6 r6 e r6 r6
+6 s5 e e s4 e e
+7 s5 e e s4 e e
+8 e s6 e e s11 e
+9 e r1 s7 e r1 r1
+10 e r3 r3 e r3 r3
+11 e r5 r5 e r5 r5
